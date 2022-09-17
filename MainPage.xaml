@@ -4,11 +4,15 @@
              xmlns:local="clr-namespace:Drag"
              x:Class="Drag.MainPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
 
-    <BlazorWebView HostPage="wwwroot/index.html">
-        <BlazorWebView.RootComponents>
-            <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
-        </BlazorWebView.RootComponents>
-    </BlazorWebView>
 
+        <BlazorWebView HostPage="wwwroot/index.html">
+            <BlazorWebView.RootComponents>
+                <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+            </BlazorWebView.RootComponents>
+        </BlazorWebView>
+
+        <Button Pressed="Button_OnPressed" Text="Drag window native button" HeightRequest="50" WidthRequest="300"></Button>
+    </Grid>
 </ContentPage>

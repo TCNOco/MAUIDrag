@@ -6,4 +6,9 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Button_OnPressed(object sender, EventArgs e)
+    {
+        MauiProgram.Drag();
+    }
 }
